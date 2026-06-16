@@ -26,7 +26,18 @@
                 <span>Sumadora</span>
             </a>
         </nav>
+        <section id="files">
+            <button id="btnFiles">&#128230; Descargar (.rar)</button>
+        </section>
     </section>
+    <script>
+        document.getElementById("btnFiles").addEventListener("click", () => {
+            const a = document.createElement("a")
+            a.href = "./htmlTest.rar"
+            a.download = "htmlTest.rar"
+            a.click()
+        })
+    </script>
 </body>
 
 </html>

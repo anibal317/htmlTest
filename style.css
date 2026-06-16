@@ -86,3 +86,27 @@ nav a .desc {
     color: #999;
     font-weight: 400;
 }
+
+#files {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+#btnFiles {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#btnFiles:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
