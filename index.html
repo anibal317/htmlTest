@@ -13,29 +13,38 @@
         <h1><span>#</span> Ejercicios</h1>
         <p class="subtitle">Encontrá el error en cada ejercicio</p>
         <nav>
-            <a href="./ejercicio1.html">
-                <span class="num">1</span>
-                <span>Visor HTML </span>
-            </a>
-            <a href="./ejercicio2.html">
-                <span class="num">2</span>
-                <span>Contador </span>
-            </a>
-            <a href="./ejercicio3.html">
-                <span class="num">3</span>
-                <span>Sumadora</span>
-            </a>
+            <div class="nav-item">
+                <a href="./ejercicio1/">
+                    <span class="num">1</span>
+                    <span>Visor HTML</span>
+                </a>
+                <button class="download-btn" data-rar="ejercicio1.rar" title="Descargar RAR">&#128230;</button>
+            </div>
+            <div class="nav-item">
+                <a href="./ejercicio2/">
+                    <span class="num">2</span>
+                    <span>Contador</span>
+                </a>
+                <button class="download-btn" data-rar="ejercicio2.rar" title="Descargar RAR">&#128230;</button>
+            </div>
+            <div class="nav-item">
+                <a href="./ejercicio3/">
+                    <span class="num">3</span>
+                    <span>Sumadora</span>
+                </a>
+                <button class="download-btn" data-rar="ejercicio3.rar" title="Descargar RAR">&#128230;</button>
+            </div>
         </nav>
-        <section id="files">
-            <button id="btnFiles">&#128230; Descargar (.rar)</button>
-        </section>
     </section>
+
     <script>
-        document.getElementById("btnFiles").addEventListener("click", () => {
-            const a = document.createElement("a")
-            a.href = "./htmlTest.rar"
-            a.download = "htmlTest.rar"
-            a.click()
+        document.querySelectorAll(".download-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const a = document.createElement("a")
+                a.href = "./" + btn.dataset.rar
+                a.download = btn.dataset.rar
+                a.click()
+            })
         })
     </script>
 </body>
