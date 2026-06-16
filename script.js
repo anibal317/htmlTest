@@ -3,5 +3,5 @@ const result = document.getElementById("result")
 const code = document.getElementById("code")
 
 btnSend.addEventListener("click", () => {
-    result.innerText("TEST")
+    result.innerText="TEST"
 })
