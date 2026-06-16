@@ -9,8 +9,9 @@
 <body>
   <div class="container">
     <h1>HTML Vanilla Test</h1>
-    <textarea id="inputText" placeholder="Escribe algo aquí..."></textarea>
-    <button id="btn">Mostrar texto</button>
+    <label for="inputText">Texto a mostrar:</label>
+    <textarea id="inputText" placeholder="Escribe algo aquí..." aria-label="Texto a mostrar"></textarea>
+    <button id="btn" type="button">Mostrar texto</button>
     <div id="output"></div>
   </div>
   <script src="script.js"></script>
