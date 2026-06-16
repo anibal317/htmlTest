@@ -21,3 +21,21 @@ btnRestar.addEventListener("click", () => {
     valor--
     contador.textContent = valor
 })
+
+
+/**
+Otra forma:
+let resultado = 0
+
+btnSumar.addEventListener("click", () => {
+    resultado = resultado + 1
+    contador.innerText = resultado
+})
+
+btnRestar.addEventListener("click", () => {
+    resultado = resultado - 1
+    contador.innerText = resultado
+
+})
+
+*/
